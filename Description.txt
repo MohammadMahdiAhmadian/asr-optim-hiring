@@ -4,5 +4,5 @@ Bound = max(G_i, G_max)*(days left) + profit of current node
 Else
 Bound = G_max*(days left) + R_max – P_min + profit of current node
 Where G_max, R_max and P_min are the maximum daily profit, maximum resale price and minimum machine price among machines available for sale in the future periods.  
-In addition, a machine i is only purchased if its daily profit (i.e. G_i) is greater than that of incumbent machine. 
+In addition, machine i is only purchased if its daily profit (i.e. G_i) is greater than that of incumbent machine. 
  
