@@ -1,8 +1,8 @@
-This is a very simple best-first search with branch-and-bound pruning in which nodes are visited in ascending order of their profit. The algorithm starts by running few preprocessing rules where machines which do not contribute to higher profits are identified and eliminated. Two bounding functions are used as follow:
+This is a very simple best-first search with branch-and-bound pruning in which nodes are visited in descending order of their profit. The algorithm starts by running few preprocessing rules where machines which do not contribute to higher profits are identified and eliminated. Two bounding functions are used as follow:
 If current node contains machine i with daily profit of G_i, its bound is computed as follows:
 Bound = max(G_i, G_max)*(days left) + profit of current node  
 Else
-Bound = G_max*(days left) + R_max – P_min + profit of current node
+Bound = G_max*(days left) + R_max â€“ P_min + profit of current node
 Where G_max, R_max and P_min are the maximum daily profit, maximum resale price and minimum machine price among machines available for sale in the future periods.  
 In addition, a machine i is only purchased if its daily profit (i.e. G_i) is greater than that of incumbent machine. 
  
